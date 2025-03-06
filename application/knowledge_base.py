@@ -18,7 +18,7 @@ try:
 
 except Exception:
     logger.info(f"use local configuration")
-    with open("application/config.json", "r", encoding="utf-8") as f:
+    with open("config.json", "r", encoding="utf-8") as f:
         config = json.load(f)
         logger.info(f"config: {config}")
 
